@@ -1,0 +1,12 @@
+my-bigquery-db:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dbt-learning-353912
+      schema: dbt_checking
+      threads: 4
+      keyfile: ./bigquery.json
+      # These fields come from the service account json keyfile
+      
